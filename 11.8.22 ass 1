@@ -1,0 +1,26 @@
+include<stdio.h>
+int main()
+{
+int i,n;
+printf("\n enter te value of i,n");
+scanf("%d%d",&i,&n);
+while(i<n)
+{
+
+	if(i%5==0)
+	{
+		printf("\n Aditya");
+	}
+	else if(i%2==1)while
+	{
+		printf("\n Latha Sree");
+	}
+	else
+	{
+		printf("the number is %d",i);
+	}
+	i++;
+}
+
+return 0;
+}
