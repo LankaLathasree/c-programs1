@@ -1,0 +1,19 @@
+int main(){
+int i,n,r,res,sum,mul;
+    scanf("%d",&n);
+    while(n!=0)
+    {
+        r=n%10;
+        sum=sum+r;
+        n=n/10;
+        n--;
+    }
+    for(i=0;i<n;i++)
+    {
+        r=n%10;
+        mul=mul*r;
+        n=n/10;
+    }
+        res=mul-sum;
+    printf("%d",res);
+}
