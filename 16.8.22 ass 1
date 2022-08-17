@@ -1,0 +1,30 @@
+
+#include<stdio.h>
+void main()
+{
+  int a[5];
+  int i;
+  printf("enter the elements");
+  for(i=0;i<5;i++)
+  {
+  	scanf("%d",&a[i]);
+  }
+  int j;
+  int flag=0;
+  printf("the prime numbers are");
+  
+  	for(i=4;i>=0;i--)
+  {
+  	flag=0;
+  	for(j=2;j<a[i];j++)
+  	{
+  		if(a[i]%2==0)
+  		{ flag=1;
+  		break;
+		  }
+	  }
+	  if(flag==0)
+	  printf("%d",a[i]);
+  }
+  
+}
