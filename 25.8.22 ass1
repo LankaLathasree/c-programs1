@@ -1,0 +1,10 @@
+#include<stdio.h>
+void main()
+{
+	char a[50];
+	int i,count;
+	printf("enter the vstring");
+      scanf("%[^\n]s",&a);
+      	 for(i=0;a[i]!=0;i++);
+	printf("no.of words=%d",i);
+}
