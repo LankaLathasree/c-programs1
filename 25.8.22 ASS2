@@ -1,0 +1,16 @@
+
+#include<stdio.h>
+void main()
+{
+	char str[100],i;
+	printf("enter the string");
+	scanf("%s",str);
+	for(i=0;str[i]!='\0';i++)
+	{
+		if(str[i]%2==1)
+		{
+			str[i]=str[i]-32;
+		}
+	}
+	puts(str);
+}
