@@ -1,0 +1,32 @@
+
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+	char str[10];
+	int count=0,countl=0,countd=0;
+	int i;
+	printf("enter the sting");
+	gets(str);
+	for(i=0;str[i]!='\0';i++)
+	{
+		if(isupper(str[i]))
+		{
+		count=count+1;
+	    }
+	    if(islower(str[i]))
+		{
+		
+		   countl=countl+1;
+	    }
+		if(isdigit(str[i]))
+		{
+		
+		 countd=countd+1;
+	    }
+		
+	}
+	printf("count of uppercase=%d\n",count);
+	printf("count of lowercase=%d\n",countl);
+	printf("count of digits=%d",countd);
+}
