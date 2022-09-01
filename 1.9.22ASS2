@@ -1,0 +1,21 @@
+
+#include<stdio.h>
+
+long	int	fact(int	a)
+{
+	long	int	fact=1;
+	int	i;
+	for(i=a;i>1;i--)
+	{
+		fact=fact*i;
+	}
+return	fact;
+}
+long	int	main()
+{
+long	int	a;
+	printf("enter	the	value");
+	scanf("%ld",&a);
+	printf("%ld",fact(a));
+	return	0;
+}
